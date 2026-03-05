@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#dff2d8"/>
+  <rect y="380" width="800" height="220" fill="#75b95a"/>
+  <rect x="90" y="260" width="180" height="120" fill="#f0f8eb" stroke="#4f7f3f" stroke-width="6"/>
+  <polygon points="70,270 180,190 290,270" fill="#a05e3c"/>
+  <rect x="160" y="315" width="38" height="65" fill="#4f7f3f"/>
+  <circle cx="560" cy="220" r="70" fill="#fff9bf"/>
+  <path d="M370 410 q90-50 180 0 q-90 50 -180 0z" fill="#3f843e"/>
+  <path d="M410 470 q100-50 200 0 q-100 50 -200 0z" fill="#2f7a3b"/>
+  <text x="400" y="560" font-family="Arial, sans-serif" font-size="40" text-anchor="middle" fill="#1f5c2b">Anjanam AgroFarm</text>
+</svg>
