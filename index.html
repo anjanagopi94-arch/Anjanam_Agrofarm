@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anjanam AgroFarm | Organic Farm Fresh</title>
+    <meta
+      name="description"
+      content="Anjanam AgroFarm provides organically grown vegetables, fruits, dairy, and ethically raised pig products through sustainable farming practices."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" id="top">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="#top" class="brand">Anjanam AgroFarm</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#sustainability">Practices</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Hero section">
+        <div class="hero-overlay">
+          <div class="container hero-content">
+            <h1>Pure Harvest, Naturally Nurtured</h1>
+            <p>
+              Welcome to Anjanam AgroFarm, where we grow healthy food with love,
+              respect for nature, and sustainable methods for future generations.
+            </p>
+            <a href="#products" class="btn">Explore Our Products</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container two-column">
+          <div>
+            <h2>About Us</h2>
+            <p>
+              Anjanam AgroFarm is a community-focused organic farm committed to
+              delivering fresh, chemical-free produce. Our farm blends traditional
+              wisdom with modern eco-friendly agriculture to produce nutritious food
+              while protecting soil, water, and biodiversity.
+            </p>
+            <p>
+              From vegetables and fruits to dairy and ethically raised pig products,
+              every harvest reflects our dedication to quality, transparency, and
+              sustainability.
+            </p>
+          </div>
+          <div class="image-card">
+            <img src="images/farm-overview.svg" alt="Overview of Anjanam AgroFarm fields" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="products">
+        <div class="container">
+          <h2>Our Products</h2>
+          <div class="card-grid product-grid">
+            <article class="card">
+              <img src="images/vegetables.svg" alt="Organic vegetables" />
+              <h3>Vegetables</h3>
+              <p>Seasonal, pesticide-free vegetables harvested fresh every day.</p>
+            </article>
+            <article class="card">
+              <img src="images/fruits.svg" alt="Organic fruits" />
+              <h3>Fruits</h3>
+              <p>Juicy, naturally ripened fruits rich in taste and nutrition.</p>
+            </article>
+            <article class="card">
+              <img src="images/dairy.svg" alt="Fresh dairy products" />
+              <h3>Dairy</h3>
+              <p>Clean and wholesome milk products from well-cared-for animals.</p>
+            </article>
+            <article class="card">
+              <img src="images/pig.svg" alt="Ethically raised pig products" />
+              <h3>Pig</h3>
+              <p>Responsibly raised pig products with animal welfare standards.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="sustainability">
+        <div class="container">
+          <h2>Sustainable Farming Practices</h2>
+          <div class="card-grid">
+            <article class="card practice-card">
+              <h3>Compost Enrichment</h3>
+              <p>
+                We convert farm waste into nutrient-rich compost to naturally restore
+                soil fertility.
+              </p>
+            </article>
+            <article class="card practice-card">
+              <h3>Water Conservation</h3>
+              <p>
+                Drip irrigation and rainwater harvesting help us use every drop
+                responsibly.
+              </p>
+            </article>
+            <article class="card practice-card">
+              <h3>Natural Crop Protection</h3>
+              <p>
+                We rely on crop rotation, companion planting, and bio-solutions
+                instead of harmful chemicals.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="gallery">
+        <div class="container">
+          <h2>Farm Activity Gallery</h2>
+          <div class="gallery-grid">
+            <img src="images/gallery-1.svg" alt="Farmers planting crops" />
+            <img src="images/gallery-2.svg" alt="Harvesting fresh vegetables" />
+            <img src="images/gallery-3.svg" alt="Fresh fruits display" />
+            <img src="images/gallery-4.svg" alt="Livestock care at farm" />
+            <img src="images/gallery-5.svg" alt="Irrigation in fields" />
+            <img src="images/gallery-6.svg" alt="Organic produce packaging" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <h2>Contact Us</h2>
+            <p>
+              Have a question or want to place an order? Reach out to us and we’ll
+              be happy to help.
+            </p>
+            <form class="contact-form" id="contactForm">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+          <div class="map-placeholder" role="img" aria-label="Google Maps placeholder">
+            <h3>Farm Location</h3>
+            <p>Google Maps Embed Placeholder</p>
+            <p class="small-text">Add your real map iframe here for deployment.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Anjanam AgroFarm. All rights reserved.</p>
+        <div class="social-links" aria-label="Social media links">
+          <a href="#" aria-label="Visit Facebook">Facebook</a>
+          <a href="#" aria-label="Visit Instagram">Instagram</a>
+          <a href="#" aria-label="Visit YouTube">YouTube</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
