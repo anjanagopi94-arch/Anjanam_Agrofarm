@@ -22,10 +22,4 @@ if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
-if (contactForm) {
-  contactForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    alert('Thank you! Your message has been received.');
-    contactForm.reset();
-  });
-}
+
