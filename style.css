@@ -95,8 +95,14 @@ img {
 
 .hero {
   min-height: calc(100vh - 74px);
-  background: linear-gradient(rgba(18, 47, 24, 0.45), rgba(18, 47, 24, 0.45)),
-    url('https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+  background-image: linear-gradient(rgba(18, 47, 24, 0.45), rgba(18, 47, 24, 0.45)),
+    image-set(
+      url('https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1000&q=80') 1x,
+      url('https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=2000&q=80') 2x
+    );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-overlay {
@@ -137,6 +143,8 @@ img {
 
 .section {
   padding: 4.5rem 0;
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 800px;
 }
 
 .section h2 {
@@ -219,28 +227,67 @@ img {
   align-items: start;
 }
 
-.contact-form {
-  display: grid;
-  gap: 0.55rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-  border: 1px solid #c3d9c3;
-  border-radius: 10px;
-  padding: 0.75rem 0.85rem;
-  font: inherit;
-}
-
-.map-placeholder {
+.map-card {
   background: linear-gradient(135deg, #deefd9, #cde8c4);
-  min-height: 320px;
   border-radius: 16px;
-  display: grid;
-  place-content: center;
-  text-align: center;
   padding: 1rem;
   box-shadow: var(--shadow);
+}
+
+.map-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--primary-dark);
+}
+
+
+.map-frame-link {
+  display: block;
+  border-radius: 12px;
+}
+
+.map-card iframe {
+  width: 100%;
+  min-height: 320px;
+  border: 0;
+  border-radius: 12px;
+  margin-bottom: 0.8rem;
+  pointer-events: none;
+}
+
+.map-link {
+  margin-top: 0.4rem;
+}
+
+.contact-note {
+  background: #edf7e9;
+  border-left: 4px solid var(--primary);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  max-width: 520px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  z-index: 1200;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-float svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex-shrink: 0;
 }
 
 .small-text {
@@ -285,6 +332,16 @@ img {
 }
 
 @media (max-width: 720px) {
+  .whatsapp-float {
+    right: 0.85rem;
+    bottom: 0.85rem;
+    padding: 0.7rem 0.9rem;
+  }
+
+  .whatsapp-float span {
+    font-size: 0.92rem;
+  }
+
   .nav-toggle {
     display: block;
   }
