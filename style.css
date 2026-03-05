@@ -95,14 +95,8 @@ img {
 
 .hero {
   min-height: calc(100vh - 74px);
-  background-image: linear-gradient(rgba(18, 47, 24, 0.45), rgba(18, 47, 24, 0.45)),
-    image-set(
-      url('https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1000&q=80') 1x,
-      url('https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=2000&q=80') 2x
-    );
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(18, 47, 24, 0.45), rgba(18, 47, 24, 0.45)),
+    url('https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
 }
 
 .hero-overlay {
@@ -143,8 +137,6 @@ img {
 
 .section {
   padding: 4.5rem 0;
-  content-visibility: auto;
-  contain-intrinsic-size: 1px 800px;
 }
 
 .section h2 {
@@ -240,29 +232,15 @@ img {
   font: inherit;
 }
 
-.map-card {
+.map-placeholder {
   background: linear-gradient(135deg, #deefd9, #cde8c4);
+  min-height: 320px;
   border-radius: 16px;
+  display: grid;
+  place-content: center;
+  text-align: center;
   padding: 1rem;
   box-shadow: var(--shadow);
-}
-
-.map-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  color: var(--primary-dark);
-}
-
-.map-card iframe {
-  width: 100%;
-  min-height: 320px;
-  border: 0;
-  border-radius: 12px;
-  margin-bottom: 0.8rem;
-}
-
-.map-link {
-  margin-top: 0.4rem;
 }
 
 .small-text {
